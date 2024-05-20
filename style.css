@@ -63,7 +63,7 @@ html {
 .navlist{
     color: whitesmoke;
     font-family: monospace bold;
-    font-size: 130%;
+    font-size: 2vw;
     font-weight: bold;
     padding: 10px;
 }
