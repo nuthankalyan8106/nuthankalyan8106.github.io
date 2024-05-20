@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="style.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="Logo-removebg-preview.png" alt="Logo" id="logo" style="width: 7%;height: 7%;">
+        <nav>
+            <button class="menu-button">Menu</button>
+            <ul class="navbar">
+                <li><a href="#about" class="navlist">About</a></li>
+                <li><a href="#skills" class="navlist">Skills</a></li>
+                <li><a href="#projects" class="navlist">Projects</a></li>
+                <li><a href="#Featured" class="navlist">Featured</a></li>
+                <li><a href="#contact" class="navlist">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="profile">
+            <img src="profile.jpg" alt="About Me" style="width: 30%;height: 30%;">
+            <!-- <h1
+                style="color: whitesmoke;font-size: 45px;margin-bottom:2.5%;color: rgb(255, 255, 255);margin-left: 12%;">
+                I do</h1> -->
+            <h1 class="auto-text-class">I do Data <span class="auto-type"></span></h1>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed(
+                    '.auto-type', {
+                    strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    loop: true
+                })
+            </script>
+        </div>
+        <div class="about-me">
+            <h1
+                style="color: whitesmoke;font-size: 30px;margin-bottom: 10px;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
+                About Me</h1>
+            <div class="about-me-flex">
+            <p
+                style="color: white; font-size: 20px;word-spacing: 5px;text-align: left;font-family: monospace;font-weight: lighter;">
+                I am Nuthan Kalyan, I started my coding journey in oct 2021.
+                Since I started with python, I was really enjoying coding and then I started researching about Data
+                Science and its career.I am really good at math which is very essential for data science.
+                since then I started exploring Data Science and learned new tools. I made up my mind that i will be
+                persuing my career in data science and came a long way till now.
+            </p>
+            <img src="myimg.jpg" alt="" width="20%">
+        </div>
+        </div>
+    </section>
+    <h1
+        style="color: whitesmoke;font-size: 30px;margin-bottom: 10px;margin-top:5%;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
+        Skills</h1>
+    <section id="skills">
+
+        <div class="skill-card">
+            <h2>Python</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Java</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>MySQL</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>PowerBi</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Tableau</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Data Analysis</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Machine Learning</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Azure SQL Servers</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Azure SQL DataBases</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Web Scraping</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Advanced MS Excel</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Azure Data Studio</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>HTML</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>CSS</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>JavaScript</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Node JS</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>Git</h2>
+        </div>
+        <div class="skill-card">
+
+            <h2>GitHub</h2>
+        </div>
+
+    </section>
+    <h1
+        style="color: whitesmoke;font-size: 30px;margin-bottom: 10px;margin-top:5%;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
+        Projects</h1>
+    <section id="projects">
+        <div class="project-card">
+            <h3>Streamline Student Data Management</h3>
+            <img src="Project Workflow.png" alt="Project 1 Image">
+            <div class="button-container">
+                <button class="open-modal">Project Description</button>
+                <a href="https://github.com/nuthankalyan/Streamlining_Student_Data_Management" class="open-modal"
+                    target="_blank">GitHub Repo</a>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Streamlining Student Data Management</h2>
+                    <p>
+                        <ul>
+                            <li>Built Frontend HTML page to read inputs from user</li>
+                            <li>Developed Flask application and extracted user inputs to flask application</li>
+                            <li>Created Azure SQL Server and DataBase in Azure Cloud and connected to Flask application using pypyodbc library</li>
+                            <li>Designed ER model for table creation in DataBase</li>
+                            <li>Performed CRUD operations on Azure SQL Server</li>
+                            <li>Analysed inputs from user by building small dashboard in PowerBi web using Semantic Model</li>
+                            <li>Do Watch the demo video:</li>
+                            <iframe width="500" height="350" src="https://www.youtube.com/embed/QcWeYUi6Sx4" title="Streamlining Student Data Management" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="project-card">
+            <h3>Flipkart Mobiles Sales Analysis</h3>
+            <img src="flipkartproject.png" alt="Project 2 Image">
+            <div class="button-container">
+                <button class="open-modal">Project Description</button>
+                <a href="https://github.com/nuthankalyan/Flipkart-mobile-sales-analysis" class="open-modal" target="_blank">GitHub
+                    Repo</a>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Web Scraping of Flipkart mobiles</h2>
+                    <p>
+                        <ul>
+                            <li>Extracted individual data on FlipKart using web scraping framework BeautifulSoup</li>
+                            <li>Converted into a DataFrame in Pandas</li>
+                            <li>Cleaned and Transformed the Data</li>
+                            <li>Built a dashboard using Google Looker Studio which describes sales analysis of various brands</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Walmart Sales Analysis and Forecasting</h3>
+            <img src="walmart.jpg" alt="Project 2 Image" style="width: 100%;height: 50%;">
+            <div class="button-container">
+                <button class="open-modal">Project Description</button>
+                <a href="https://github.com/nuthankalyan/Walmart-Sales-Analysis" class="open-modal" target="_blank">GitHub
+                    Repo</a>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Walmart Sales Analysis and Forecasting</h2>
+                    <p>
+                        <ul>
+                            <li>Gathered Walmart data from different sources and imported into Jupyter Notebook</li>
+                            <li>Found outliers hidden in the data and cleaned the data</li>
+                            <li>Merged different data table into one table</li>
+                            <li>Performed Exploratory Data Analysis on the data</li>
+                            <li>Prepared the data for Machine Learning Model training</li>
+                            <li>Normalized the Data using MinMaxScaler</li>
+                            <li>Trained the model using various Machine Learning Models</li>
+                            <li>Analysed all the model accuracy</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Car Price Prediction</h3>
+            <img src="carprice.jpg" alt="Project 2 Image" style="width: 100%;height: 60%;">
+            <div class="button-container">
+                <button class="open-modal">Project Description</button>
+                <a href="https://github.com/nuthankalyan/Car-Price-Predction-ML-Model" class="open-modal" target="_blank">GitHub
+                    Repo</a>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Car Price Prediction using Machine Learning</h2>
+                    <p>
+                        <ul>
+                        <li>Gathered data from source</li>
+                        <li>Imported it into Jupyter</li>
+                        <li>Cleaned and transformed the data</li>
+                        <li>Splitting the data into train and test data</li>
+                        <li>Trained the model using Regression</li>
+                        <li>Analysed the model accuracy</li>
+                        <li>Dumped the model into a single file</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1
+        style="color: whitesmoke;font-size: 30px;margin-bottom: 10px;margin-top:5%;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
+        Featured</h1>
+    <section id="Featured">
+        <div class="featured-card">
+            <img src="linkedinss..jpg" alt="" style="width: 60%;height: 100%;">
+            <span style="margin-left: 4%;">Holding top Data Analytics Voice on LinkedIn</span>
+        </div>
+    </section>
+    <h1
+        style="color: whitesmoke;font-size: 30px;margin-bottom: 10px;margin-top:5%;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
+        Socials</h1>
+        <section id="contact">
+            <div class="contact-card">
+                <div class="social-links">
+                    <a href="mailto:nuthan317@gmail.com" style="margin-right: 4%;margin-top: 2%;">
+                        <img src="gmaillogo.avif" alt="Twitter Logo" style="width: 10%;">
+                                Gmail
+                    </a>
+                    <a href="https://www.linkedin.com/in/nuthankalyan/" target="_blank">
+                        <img src="linkedinlogo.jpg" alt="LinkedIn Logo">
+                        <span style="position: relative;left: 3%;">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/nuthankalyan" target="_blank" style="margin-right: 3%;">
+                        <img src="githublogo.webp" alt="GitHub Logo">
+                        <span style="position: relative;left: 3%;">GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    <script>
+        // Get all the buttons that open the modal
+        var btns = document.querySelectorAll(".open-modal");
+
+        // Get all the elements that close the modal
+        var spans = document.querySelectorAll(".close-modal");
+
+        // Loop through the buttons and add click event listeners
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var modal = this.parentElement.nextElementSibling;
+                modal.style.display = "block";
+                document.body.classList.add('modal-open');
+            });
+        }
+
+        // Loop through the close elements and add click event listeners
+        for (let i = 0; i < spans.length; i++) {
+            spans[i].addEventListener("click", function () {
+                var modal = this.parentElement.parentElement;
+                modal.style.display = "none";
+                document.body.classList.remove('modal-open');
+            });
+        }
+
+        // Close the modal when the user clicks anywhere outside of it
+        window.onclick = function (event) {
+            if (event.target.classList.contains("modal")) {
+                event.target.style.display = "none";
+                document.body.classList.remove('modal-open');
+            }
+        }
+    </script>
+</body>
+<footer>
+    <div class="footer-bottom">
+        <p style="color: white; text-align: center;">&copy; Nuthan Kalyan | Designed by Nuthan Kalyan</p> 
+    </div>
+</footer>
+</html>
