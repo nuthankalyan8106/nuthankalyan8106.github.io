@@ -63,8 +63,14 @@ html {
 .navlist{
     color: whitesmoke;
     font-family: monospace bold;
-    font-size: 50%;
+    font-size: 130%;
     font-weight: bold;
+    padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    .navlist {
+        font-size: 80%; /* Adjust as needed */
+    }
 }
 .profile img{
     border-radius: 50%;
@@ -105,7 +111,7 @@ html {
 .skill-card h2 {
     margin: 0;
     color: white;
-    font-size: 3vw;
+    font-size:2vw;
     font-family: monospace;
     text-align: center;
 }
@@ -120,7 +126,7 @@ nav a {
 nav a:hover {
     border: 2% solid lightgoldenrodyellow;
     box-shadow: 0 0 lightgoldenrodyellow; /* Change as needed */
-    border-radius: 30%;
+    border-radius: 20%;
     background-color: lightgoldenrodyellow;
     color: black;
   }  
