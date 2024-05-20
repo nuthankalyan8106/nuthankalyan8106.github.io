@@ -44,7 +44,7 @@ nav ul li {
 }
 .auto-text-class{
     color: white;
-    font-size: 400%;
+    font-size: 200%;
     margin-left: 1.5%;
 
 }
@@ -63,7 +63,7 @@ html {
 .navlist{
     color: whitesmoke;
     font-family: monospace bold;
-    font-size: 100%;
+    font-size: 80%;
     font-weight: bold;
 }
 .profile img{
@@ -86,7 +86,7 @@ html {
     border-radius: 10%;
 }
 .skill-card {
-        width: 20%; /* Adjust as needed */
+        width: 25%; /* Adjust as needed */
         height: 40px; /* Adjust as needed */
         /* Rest of your styles */
         display: flex;
