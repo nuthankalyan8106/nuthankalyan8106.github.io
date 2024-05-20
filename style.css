@@ -67,9 +67,9 @@ html {
     font-weight: bold;
     padding: 10px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 300px) {
     .navlist {
-        font-size: 80%; /* Adjust as needed */
+        font-size: 5px; /* Adjust as needed */
     }
 }
 .profile img{
