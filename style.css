@@ -90,6 +90,7 @@ html {
 }
 .about-me-flex img {
     border-radius: 10%;
+    width: 20%;
 }
 .skill-card {
         width: 25%; /* Adjust as needed */
