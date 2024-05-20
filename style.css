@@ -249,7 +249,7 @@ nav a:hover {
 .featured-card span{
     color: white;
     font-family: monospace;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 #Featured{
     display: flex;
