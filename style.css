@@ -74,6 +74,7 @@ html {
 }
 .profile img{
     border-radius: 50%;
+    width: 20%;
 }
 .about-me {
     border: 1% solid lightgoldenrodyellow; /* Change as needed */
@@ -355,4 +356,25 @@ body.modal-open {
     .featured-text {
         margin-left: 4%;
     }
+}
+.downloadcv {
+    width: 20%;
+    margin-left: 40%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid lightgoldenrodyellow;
+    border-radius: 20px;
+    font-size: 2vw;
+    font-family: monospace;
+    text-align: center;
+    text-decoration: none;
+}
+
+.downloadcv:hover {
+    border: 2% solid lightgoldenrodyellow;
+    box-shadow: 0 0 lightgoldenrodyellow; /* Change as needed */
+    border-radius: 20px;
+    background-color: lightgoldenrodyellow;
+    color: black;
 }
