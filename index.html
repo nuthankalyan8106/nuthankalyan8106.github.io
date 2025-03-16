@@ -445,14 +445,6 @@
             once: false
         });
 
-        // Typed.js
-        var typed = new Typed('.auto-type', {
-            strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true
-        });
-
         // Mobile menu toggle
         const menuBtn = document.querySelector('.menu-btn');
         const navbar = document.querySelector('.navbar');
@@ -538,5 +530,28 @@
         });
     </script>
     <script src="style.js"></script>
+    <!-- Fallback script for typed.js animation -->
+    <script>
+        // Ensure typed.js animation works even if external JS has issues
+        window.addEventListener('load', function() {
+            // Check if typed instance already exists from style.js
+            setTimeout(function() {
+                const autoTypeElement = document.querySelector('.auto-type');
+                // Only initialize if the element exists and doesn't already have a typed instance
+                if (autoTypeElement && !window.typedInstance) {
+                    window.typedInstance = new Typed('.auto-type', {
+                        strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
+                        typeSpeed: 100,
+                        backSpeed: 100,
+                        loop: true,
+                        startDelay: 300,
+                        showCursor: true,
+                        cursorChar: '|',
+                        autoInsertCss: true
+                    });
+                }
+            }, 1000);
+        });
+    </script>
 </body>
 </html>

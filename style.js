@@ -117,15 +117,22 @@ document.addEventListener('DOMContentLoaded', function() {
         mirror: false
     });
 
-    // Typed.js initialization
-    if (document.querySelector('.auto-type')) {
-        var typed = new Typed('.auto-type', {
-            strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true
-        });
-    }
+    // Typed.js initialization with a slight delay to ensure DOM is ready
+    setTimeout(function() {
+        const autoTypeElement = document.querySelector('.auto-type');
+        if (autoTypeElement && !window.typedInstance) {
+            window.typedInstance = new Typed('.auto-type', {
+                strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true,
+                startDelay: 500,
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true
+            });
+        }
+    }, 500);
 
     // Custom cursor
     const cursor = document.querySelector('.cursor');

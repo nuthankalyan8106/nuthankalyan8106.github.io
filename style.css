@@ -290,6 +290,24 @@ header {
     font-weight: 600;
 }
 
+/* Typed.js cursor styling */
+.typed-cursor {
+    color: var(--accent-color);
+    font-size: 3.5rem;
+    font-weight: 500;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 .hero-buttons {
     display: flex;
     gap: 2rem;
