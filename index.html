@@ -4,158 +4,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuthan Kalyan</title>
+    <title>Nuthan Kalyan | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="style.js"></script>
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <header>
-        <img src="Logo-removebg-preview.png" alt="Logo" id="logo" style="width: 7%;height: 7%;">
+        <div class="logo-container">
+            <img src="Logo-removebg-preview.png" alt="Logo" id="logo">
+        </div>
         <nav>
-            <button class="menu-button">Menu</button>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
             <ul class="navbar">
-                <li><a href="#about" class="navlist">About</a></li>
-                <li><a href="#skills" class="navlist">Skills</a></li>
-                <li><a href="#projects" class="navlist">Projects</a></li>
-                <li><a href="#Featured" class="navlist">Featured</a></li>
-                <li><a href="#contact" class="navlist">Contact</a></li>
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about">
-        <div class="profile">
-            <img src="profile.jpg" alt="About Me" style="width: 50%;height: 50%;">
-            <!-- <h1
-                style="color: whitesmoke;font-size: 45px;margin-bottom:2.5%;color: rgb(255, 255, 255);margin-left: 12%;">
-                I do</h1> -->
-            <h1 class="auto-text-class">I do Data <span class="auto-type"></span></h1>
-            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-            <script>
-                var typed = new Typed(
-                    '.auto-type', {
-                    strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
-                    typeSpeed: 100,
-                    backSpeed: 100,
-                    loop: true
-                })
-            </script>
-        </div>
-        <a href="Resume.pdf" download="Nuthan_kalyan_resume" class="downloadcv">
-            Download Resume
-        </a>
-        <div class="about-me">
-            <h1
-                style="color: whitesmoke;font-size: 4vw;margin-bottom: 10px;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
-                About Me</h1>
-            <div class="about-me-flex">
-            <p
-                style="color: white; font-size: 3vw;text-align: center;font-family: monospace;font-weight: lighter;">
-                I am Nuthan Kalyan, I started my coding journey in oct 2021.
-                since then I started exploring Data Science and learned new tools. I made up my mind that i will be
-                persuing my career in data science and came a long way till now.
-            </p>
-            <img src="myimg.jpg" alt="">
-        </div>
-        </div>
-    </section>
-    <h1
-        style="color: whitesmoke;font-size: 4vw;margin-bottom: 10px;margin-top:5%;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
-        Skills</h1>
-    <section id="skills">
 
-        <div class="skill-card">
-            <h2>Python</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Java</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>MySQL</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>PowerBi</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Tableau</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Data Analysis</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Machine Learning</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Azure SQL Servers</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Azure SQL DataBases</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Web Scraping</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Advanced MS Excel</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Azure Data Studio</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>HTML</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>CSS</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>JavaScript</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Node JS</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>Git</h2>
-        </div>
-        <div class="skill-card">
-
-            <h2>GitHub</h2>
-        </div>
-
-    </section>
-    <h1
-        style="color: whitesmoke;font-size: 4vw;margin-bottom: 10px;margin-top:5%;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
-        Projects</h1>
-    <section id="projects">
-        <div class="project-card">
-            <h3>Streamline Student Data Management</h3>
-            <img src="Project_Workflow.png" alt="Project 1 Image">
-            <div class="button-container">
-                <button class="open-modal">Project Description</button>
-                <a href="https://github.com/nuthankalyan/Streamlining_Student_Data_Management" class="open-modal"
-                    target="_blank">GitHub Repo</a>
+    <section id="hero" class="hero-section">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Hi, I'm <span class="highlight">Nuthan Kalyan</span></h1>
+                <h2>I do Data <span class="auto-type"></span></h2>
+                <div class="hero-buttons">
+                    <a href="Resume.pdf" download="Nuthan_kalyan_resume" class="btn primary-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn secondary-btn">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
             </div>
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close-modal">&times;</span>
-                    <h2>Streamlining Student Data Management</h2>
-                    <p>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <img src="profile.jpg" alt="Nuthan Kalyan">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="scroll-arrow">
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-image">
+                <img src="myimg.jpg" alt="About Me">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="about-content">
+                <p>I am Nuthan Kalyan, I started my coding journey in October 2021. Since then I started exploring Data Science and learned new tools. I made up my mind that I will be pursuing my career in data science and came a long way till now.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3><i class="fas fa-code"></i></h3>
+                        <p>Data Science</p>
+                    </div>
+                    <div class="stat">
+                        <h3><i class="fas fa-chart-line"></i></h3>
+                        <p>Data Analysis</p>
+                    </div>
+                    <div class="stat">
+                        <h3><i class="fas fa-database"></i></h3>
+                        <p>Machine Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Skills</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><img src="python.png" alt="Python"></div>
+                        <h4>Python</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><img src="java.png" alt="Java"></div>
+                        <h4>Java</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>MySQL</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Data Science</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h4>Data Analysis</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h4>Machine Learning</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>PowerBI</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Other Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <h4>Git & GitHub</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h4>Azure</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                        <h4>Advanced Excel</h4>
+                        <div class="skill-progress">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-img">
+                    <img src="Project_Workflow.png" alt="Streamline Student Data Management">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/nuthankalyan/Streamlining_Student_Data_Management" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <button class="project-link open-modal"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Streamline Student Data Management</h3>
+                    <p>A comprehensive system for managing student data using Flask, Azure SQL, and PowerBI.</p>
+                    <div class="project-tags">
+                        <span>Flask</span>
+                        <span>Azure SQL</span>
+                        <span>PowerBI</span>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2>Streamlining Student Data Management</h2>
                         <ul>
                             <li>Built Frontend HTML page to read inputs from user</li>
                             <li>Developed Flask application and extracted user inputs to flask application</li>
@@ -164,49 +250,68 @@
                             <li>Performed CRUD operations on Azure SQL Server</li>
                             <li>Analysed inputs from user by building small dashboard in PowerBi web using Semantic Model</li>
                             <li>Do Watch the demo video:</li>
-                            <iframe src="https://www.youtube.com/embed/QcWeYUi6Sx4" title="Streamlining Student Data Management" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 60vw;height:50vh;"></iframe>
+                            <iframe src="https://www.youtube.com/embed/QcWeYUi6Sx4" title="Streamlining Student Data Management" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </ul>
-                    </p>
+                    </div>
                 </div>
             </div>
 
-        </div>
-        <div class="project-card">
-            <h3>Flipkart Mobiles Sales Analysis</h3>
-            <img src="flipkartproject.png" alt="Project 2 Image">
-            <div class="button-container">
-                <button class="open-modal">Project Description</button>
-                <a href="https://github.com/nuthankalyan/Flipkart-mobile-sales-analysis" class="open-modal" target="_blank">GitHub
-                    Repo</a>
-            </div>
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close-modal">&times;</span>
-                    <h2>Web Scraping of Flipkart mobiles</h2>
-                    <p>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-img">
+                    <img src="flipkartproject.png" alt="Flipkart Mobiles Sales Analysis">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/nuthankalyan/Flipkart-mobile-sales-analysis" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <button class="project-link open-modal"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Flipkart Mobiles Sales Analysis</h3>
+                    <p>Web scraping and analysis of mobile phone sales data from Flipkart.</p>
+                    <div class="project-tags">
+                        <span>BeautifulSoup</span>
+                        <span>Pandas</span>
+                        <span>Google Looker</span>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2>Web Scraping of Flipkart mobiles</h2>
                         <ul>
                             <li>Extracted individual data on FlipKart using web scraping framework BeautifulSoup</li>
                             <li>Converted into a DataFrame in Pandas</li>
                             <li>Cleaned and Transformed the Data</li>
                             <li>Built a dashboard using Google Looker Studio which describes sales analysis of various brands</li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="project-card">
-            <h3>Walmart Sales Analysis and Forecasting</h3>
-            <img src="walmart.jpg" alt="Project 2 Image" style="width: 100%;height: 50%;">
-            <div class="button-container">
-                <button class="open-modal">Project Description</button>
-                <a href="https://github.com/nuthankalyan/Walmart-Sales-Analysis" class="open-modal" target="_blank">GitHub
-                    Repo</a>
-            </div>
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close-modal">&times;</span>
-                    <h2>Walmart Sales Analysis and Forecasting</h2>
-                    <p>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-img">
+                    <img src="walmart.jpg" alt="Walmart Sales Analysis and Forecasting">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/nuthankalyan/Walmart-Sales-Analysis" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <button class="project-link open-modal"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Walmart Sales Analysis</h3>
+                    <p>Analysis and forecasting of Walmart sales data using machine learning models.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Data Analysis</span>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2>Walmart Sales Analysis and Forecasting</h2>
                         <ul>
                             <li>Gathered Walmart data from different sources and imported into Jupyter Notebook</li>
                             <li>Found outliers hidden in the data and cleaned the data</li>
@@ -217,109 +322,221 @@
                             <li>Trained the model using various Machine Learning Models</li>
                             <li>Analysed all the model accuracy</li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="project-card">
-            <h3>Car Price Prediction</h3>
-            <img src="carprice.jpg" alt="Project 2 Image" style="width: 100%;height: 60%;">
-            <div class="button-container">
-                <button class="open-modal">Project Description</button>
-                <a href="https://github.com/nuthankalyan/Car-Price-Predction-ML-Model" class="open-modal" target="_blank">GitHub
-                    Repo</a>
-            </div>
-            <div class="modal">
-                <div class="modal-content">
-                    <span class="close-modal">&times;</span>
-                    <h2>Car Price Prediction using Machine Learning</h2>
-                    <p>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-img">
+                    <img src="carprice.jpg" alt="Car Price Prediction">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/nuthankalyan/Car-Price-Predction-ML-Model" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <button class="project-link open-modal"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Car Price Prediction</h3>
+                    <p>Machine learning model to predict car prices based on various features.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Regression</span>
+                        <span>Jupyter</span>
+                    </div>
+                </div>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <h2>Car Price Prediction using Machine Learning</h2>
                         <ul>
-                        <li>Gathered data from source</li>
-                        <li>Imported it into Jupyter</li>
-                        <li>Cleaned and transformed the data</li>
-                        <li>Splitting the data into train and test data</li>
-                        <li>Trained the model using Regression</li>
-                        <li>Analysed the model accuracy</li>
-                        <li>Dumped the model into a single file</li>
+                            <li>Gathered data from source</li>
+                            <li>Imported it into Jupyter</li>
+                            <li>Cleaned and transformed the data</li>
+                            <li>Splitting the data into train and test data</li>
+                            <li>Trained the model using Regression</li>
+                            <li>Analysed the model accuracy</li>
+                            <li>Dumped the model into a single file</li>
                         </ul>
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <h1
-        style="color: whitesmoke;font-size: 4vw;margin-bottom: 10px;margin-top:5%;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
-        Featured</h1>
-    <section id="Featured">
-        <div class="featured-card">
-            <img src="linkedinssnew..jpg" alt="" style="width: 35vw;height: 100%;margin-left: 2%;" class="featured-image">
-            <span style="margin-left: 4%;" class="featured-text">Holding top Data Analytics Voice on LinkedIn</span>
+
+    <section id="featured" class="section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Featured</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="featured-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="featured-image">
+                <img src="linkedinssnew..jpg" alt="LinkedIn Feature">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="featured-content">
+                <h3>Top Data Analytics Voice on LinkedIn</h3>
+                <p>Recognized for providing valuable insights and content in the field of data analytics on LinkedIn.</p>
+                <a href="https://www.linkedin.com/in/nuthankalyan/" target="_blank" class="btn primary-btn">
+                    <i class="fab fa-linkedin"></i> View Profile
+                </a>
+            </div>
         </div>
     </section>
-    <a href="Resume.pdf" download="Nuthan_kalyan_resume" class="downloadcv">
-        Download Resume
-    </a>
-    <h1
-        style="color: whitesmoke;font-size: 4vw;margin-bottom: 10px;margin-top:5%;text-align: center;color: lightgoldenrodyellow;font-family: monospace;">
-        Socials</h1>
-        
-        <section id="contact">
-            <div class="contact-card">
-                <div class="social-links">
-                    
-                    <a href="mailto:nuthan317@gmail.com" style="margin-right: 4%;margin-top: 2%;">
-                        <img src="gmaillogo.avif" alt="Twitter Logo" style="width: 10%;">
-                                Gmail
-                    </a>
-                    <a href="https://www.linkedin.com/in/nuthankalyan/" target="_blank">
-                        <img src="linkedinlogo.jpg" alt="LinkedIn Logo">
-                        <span style="position: relative;left: 3%;">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/nuthankalyan" target="_blank" style="margin-right: 3%;">
-                        <img src="githublogo.webp" alt="GitHub Logo">
-                        <span style="position: relative;left: 3%;">GitHub</span>
-                    </a>
+
+    <section id="contact" class="section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:nuthan317@gmail.com">nuthan317@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/nuthankalyan/" target="_blank">linkedin.com/in/nuthankalyan</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/nuthankalyan" target="_blank">github.com/nuthankalyan</a></p>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="resume-download">
+                <h3>Get My Resume</h3>
+                <a href="Resume.pdf" download="Nuthan_kalyan_resume" class="btn primary-btn">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Logo-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="footer-social">
+                <a href="mailto:nuthan317@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/nuthankalyan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nuthankalyan" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 Nuthan Kalyan | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        // Get all the buttons that open the modal
-        var btns = document.querySelectorAll(".open-modal");
+        // Initialize AOS
+        AOS.init({
+            once: false
+        });
 
-        // Get all the elements that close the modal
-        var spans = document.querySelectorAll(".close-modal");
+        // Typed.js
+        var typed = new Typed('.auto-type', {
+            strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
 
-        // Loop through the buttons and add click event listeners
-        for (let i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var modal = this.parentElement.nextElementSibling;
-                modal.style.display = "block";
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navbar = document.querySelector('.navbar');
+        let menuOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            if (!menuOpen) {
+                menuBtn.classList.add('open');
+                navbar.classList.add('show');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                navbar.classList.remove('show');
+                menuOpen = false;
+            }
+        });
+
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('open');
+                navbar.classList.remove('show');
+                menuOpen = false;
+            });
+        });
+
+        // Modal functionality
+        const modalBtns = document.querySelectorAll('.open-modal');
+        const closeBtns = document.querySelectorAll('.close-modal');
+        const modals = document.querySelectorAll('.modal');
+
+        modalBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                modals[index].style.display = 'block';
                 document.body.classList.add('modal-open');
             });
-        }
+        });
 
-        // Loop through the close elements and add click event listeners
-        for (let i = 0; i < spans.length; i++) {
-            spans[i].addEventListener("click", function () {
-                var modal = this.parentElement.parentElement;
-                modal.style.display = "none";
+        closeBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                modals[index].style.display = 'none';
                 document.body.classList.remove('modal-open');
             });
-        }
+        });
 
-        // Close the modal when the user clicks anywhere outside of it
-        window.onclick = function (event) {
-            if (event.target.classList.contains("modal")) {
-                event.target.style.display = "none";
-                document.body.classList.remove('modal-open');
-            }
-        }
+        window.addEventListener('click', (e) => {
+            modals.forEach(modal => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.classList.remove('modal-open');
+                }
+            });
+        });
+
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                follower.style.left = e.clientX + 'px';
+                follower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+
+        // Add hover effect to links and buttons
+        const hoverElements = document.querySelectorAll('a, button, .skill-item, .project-card');
+        
+        hoverElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-hover');
+                follower.classList.add('cursor-hover');
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-hover');
+                follower.classList.remove('cursor-hover');
+            });
+        });
     </script>
+    <script src="style.js"></script>
 </body>
-<footer>
-    <div class="footer-bottom">
-        <p style="color: white; text-align: center;">&copy; Nuthan Kalyan | Designed by Nuthan Kalyan</p> 
-    </div>
-</footer>
 </html>
