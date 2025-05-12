@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 },
                 "color": {
-                    "value": "#ffffff"
+                    "value": "#6a11cb"
                 },
                 "shape": {
                     "type": "circle",
@@ -47,13 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#6a11cb",
+                    "color": "#2575fc",
                     "opacity": 0.4,
                     "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": 2,
+                    "speed": 6,
                     "direction": "none",
                     "random": false,
                     "straight": false,
@@ -117,22 +117,20 @@ document.addEventListener('DOMContentLoaded', function() {
         mirror: false
     });
 
-    // Typed.js initialization with a slight delay to ensure DOM is ready
-    setTimeout(function() {
-        const autoTypeElement = document.querySelector('.auto-type');
-        if (autoTypeElement && !window.typedInstance) {
-            window.typedInstance = new Typed('.auto-type', {
-                strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict'],
-                typeSpeed: 100,
-                backSpeed: 100,
-                loop: true,
-                startDelay: 500,
-                showCursor: true,
-                cursorChar: '|',
-                autoInsertCss: true
-            });
-        }
-    }, 500);
+    // Typed.js Initialization
+    var typed = new Typed('.auto-type', {
+        strings: ['Clean', 'Analyse', 'Transform', 'Visualize', 'Predict', 'Develop', 'Design', 'Create'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+        startDelay: 300,
+        showCursor: true,
+        cursorChar: '|',
+        autoInsertCss: true
+    });
+
+    // Assign typed instance to a window variable for potential reference
+    window.typedInstance = typed;
 
     // Custom cursor
     const cursor = document.querySelector('.cursor');
