@@ -31,6 +31,7 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#featured" class="nav-link">Featured</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https://topmate.io/nuthan_kalyan" target="_blank" rel="noopener noreferrer" class="nav-link highlight-link">Book Session</a></li>
             </ul>
         </nav>
     </header>
@@ -47,6 +48,11 @@
                     </a>
                     <a href="#contact" class="btn secondary-btn">
                         <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="topmate-button" style="margin-top: 20px;">
+                    <a href="https://topmate.io/nuthan_kalyan" target="_blank" rel="noopener noreferrer" class="btn primary-btn">
+                        <i class="fas fa-calendar-check"></i> Book a Session
                     </a>
                 </div>
             </div>
@@ -642,5 +648,36 @@
             }, 1000);
         });
     </script>
+    <style>
+        .highlight-link {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white !important;
+            padding: 8px 15px !important;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .highlight-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
+        }
+        
+        .highlight-link::after {
+            display: none !important;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(106, 17, 203, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(106, 17, 203, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(106, 17, 203, 0);
+            }
+        }
+    </style>
 </body>
 </html>
