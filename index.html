@@ -678,6 +678,284 @@
                 box-shadow: 0 0 0 0 rgba(106, 17, 203, 0);
             }
         }
+        
+        /* Book Session Modal Styles */
+        .book-session-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .book-session-content {
+            position: relative;
+            background-color: var(--dark-bg);
+            margin: 5% auto;
+            padding: 0;
+            width: 80%;
+            max-width: 1000px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            animation: modalFadeIn 0.5s;
+        }
+        
+        .book-session-container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .book-session-left {
+            flex: 1;
+            padding: 40px;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .book-session-right {
+            flex: 1;
+            padding: 40px;
+            background: linear-gradient(to bottom right, rgba(106, 17, 203, 0.1), rgba(37, 117, 252, 0.1));
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        
+        .book-session-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .book-session-content p {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .session-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            background-color: rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .session-option:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .session-option.active-session {
+            background-color: rgba(106, 17, 203, 0.2);
+            border: 1px solid var(--primary-color);
+        }
+        
+        .session-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        
+        .session-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .session-details h3 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .session-details p {
+            font-size: 1.4rem;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .book-now-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin-top: 20px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: var(--border-radius);
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            transition: var(--transition);
+        }
+        
+        .book-now-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(106, 17, 203, 0.4);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .book-session-container {
+                flex-direction: column;
+            }
+            
+            .book-session-left {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .book-session-right {
+                border-radius: 0 0 var(--border-radius) var(--border-radius);
+            }
+        }
     </style>
+
+    <!-- Book Session Modal -->
+    <div id="bookSessionModal" class="modal book-session-modal">
+        <div class="modal-content book-session-content">
+            <span class="close-modal">&times;</span>
+            <div class="book-session-container">
+                <div class="book-session-left">
+                    <h2>Let's Talk</h2>
+                    <p>Want to get career guidance or need help with your projects?</p>
+                    <p>Get in touch with me and schedule a talk.</p>
+                    <a href="#" class="btn primary-btn" id="contactMeBtn">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="book-session-right">
+                    <h2>Book a Session</h2>
+                    
+                    <div class="session-option" data-url="https://topmate.io/nuthan_kalyan/1534919">
+                        <div class="session-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="session-details">
+                            <h3>Project building and bug fixing</h3>
+                            <p>60 mins</p>
+                        </div>
+                    </div>
+                    
+                    <div class="session-option" data-url="https://topmate.io/nuthan_kalyan/1399355">
+                        <div class="session-icon">
+                            <i class="fas fa-compass"></i>
+                        </div>
+                        <div class="session-details">
+                            <h3>Career Guidance</h3>
+                            <p>20 mins</p>
+                        </div>
+                    </div>
+                    
+                    <div class="session-option" data-url="https://topmate.io/nuthan_kalyan/1399356/pay">
+                        <div class="session-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div class="session-details">
+                            <h3>Ask me anything</h3>
+                            <p>DM</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://topmate.io/nuthan_kalyan" target="_blank" class="btn book-now-btn" id="bookNowBtn">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize modal for Book Session
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the modal elements
+            const bookSessionModal = document.getElementById('bookSessionModal');
+            const bookSessionLinks = document.querySelectorAll('.highlight-link, .topmate-button a');
+            const closeModalBtn = bookSessionModal.querySelector('.close-modal');
+            const contactMeBtn = document.getElementById('contactMeBtn');
+            const sessionOptions = document.querySelectorAll('.session-option');
+            const bookNowBtn = document.getElementById('bookNowBtn');
+            
+            // Default Topmate URL
+            let selectedSessionUrl = "https://topmate.io/nuthan_kalyan";
+            
+            // Open modal when book session links are clicked
+            bookSessionLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    bookSessionModal.style.display = 'block';
+                    document.body.classList.add('modal-open');
+                });
+            });
+            
+            // Close modal when close button is clicked
+            closeModalBtn.addEventListener('click', function() {
+                bookSessionModal.style.display = 'none';
+                document.body.classList.remove('modal-open');
+            });
+            
+            // Close modal when clicking outside of it
+            window.addEventListener('click', function(e) {
+                if (e.target === bookSessionModal) {
+                    bookSessionModal.style.display = 'none';
+                    document.body.classList.remove('modal-open');
+                }
+            });
+            
+            // Contact Me button redirects to contact section and closes modal
+            contactMeBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                bookSessionModal.style.display = 'none';
+                document.body.classList.remove('modal-open');
+                
+                const contactSection = document.querySelector('#contact');
+                window.scrollTo({
+                    top: contactSection.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Make session options highlight when clicked and update selected URL
+            sessionOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove active class from all options
+                    sessionOptions.forEach(opt => opt.classList.remove('active-session'));
+                    
+                    // Add active class to clicked option
+                    this.classList.add('active-session');
+                    
+                    // Update the selected URL
+                    selectedSessionUrl = this.getAttribute('data-url');
+                    
+                    // Update the Book Now button href
+                    bookNowBtn.setAttribute('href', selectedSessionUrl);
+                });
+                
+                // Make entire option clickable
+                option.style.cursor = 'pointer';
+            });
+            
+            // Set the first option as active by default
+            if (sessionOptions.length > 0) {
+                sessionOptions[0].click();
+            }
+            
+            // Book Now button redirects to selected Topmate URL
+            bookNowBtn.addEventListener('click', function(e) {
+                // No need to prevent default as we want the link to work
+                // Just update the href one more time to ensure correct URL
+                this.setAttribute('href', selectedSessionUrl);
+            });
+        });
+    </script>
 </body>
 </html>
